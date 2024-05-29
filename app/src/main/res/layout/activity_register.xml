@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/register_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.RegisterActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/register_text_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LKS Mart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.22000003"
+            android:textSize="30sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/register_text_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Register"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/register_text_app"
+            app:layout_constraintStart_toStartOf="@+id/register_text_app"
+            app:layout_constraintTop_toBottomOf="@+id/register_text_app" />
+
+        <EditText
+            android:id="@+id/register_edit_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:hint="Name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/register_text_register" />
+
+        <EditText
+            android:id="@+id/register_edit_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:hint="Username"
+            app:layout_constraintEnd_toEndOf="@+id/register_edit_name"
+            app:layout_constraintStart_toStartOf="@+id/register_edit_name"
+            app:layout_constraintTop_toBottomOf="@+id/register_edit_name" />
+
+        <EditText
+            android:id="@+id/register_edit_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:hint="Address"
+            app:layout_constraintEnd_toEndOf="@+id/register_edit_username"
+            app:layout_constraintStart_toStartOf="@+id/register_edit_username"
+            app:layout_constraintTop_toBottomOf="@+id/register_edit_username" />
+
+        <EditText
+            android:id="@+id/register_edit_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:hint="Password"
+            app:layout_constraintEnd_toEndOf="@+id/register_edit_address"
+            app:layout_constraintStart_toStartOf="@+id/register_edit_address"
+            app:layout_constraintTop_toBottomOf="@+id/register_edit_address" />
+
+        <EditText
+            android:id="@+id/register_edit_confirm_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:hint="Confirm Password"
+            app:layout_constraintEnd_toEndOf="@+id/register_edit_password"
+            app:layout_constraintStart_toStartOf="@+id/register_edit_password"
+            app:layout_constraintTop_toBottomOf="@+id/register_edit_password" />
+
+        <Button
+            android:id="@+id/register_btn_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Register"
+            app:layout_constraintEnd_toEndOf="@+id/register_edit_confirm_password"
+            app:layout_constraintStart_toStartOf="@+id/register_edit_confirm_password"
+            app:layout_constraintTop_toBottomOf="@+id/register_edit_confirm_password" />
+
+        <Button
+            android:id="@+id/register_btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Login"
+            app:layout_constraintEnd_toEndOf="@+id/register_btn_register"
+            app:layout_constraintStart_toStartOf="@+id/register_btn_register"
+            app:layout_constraintTop_toBottomOf="@+id/register_btn_register" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

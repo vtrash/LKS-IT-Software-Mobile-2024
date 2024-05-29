@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/main_product"
+        android:title="Products"
+        android:icon="@drawable/baseline_products_24"/>
+
+    <item
+        android:id="@+id/main_profile"
+        android:title="Profile"
+        android:icon="@drawable/baseline_profile_24"/>
+</menu>
